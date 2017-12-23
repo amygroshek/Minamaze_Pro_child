@@ -1,0 +1,483 @@
+/*
+Theme Name: Minamaze Pro Child
+Theme URI: https://www.yourwebsite.com/sparkling-child
+Author: Amy Groshek
+Author URI: http://hire.amygroshek.com
+Description: Child of Minamaze Pro by ThinkUpThemes
+Version: 2.5.0
+Template: Minamaze_Pro
+Text Domain: Minamaze_Pro_child
+Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+*/
+@import url("../Minamaze_Pro/style.css");
+
+.laurel-btn,
+.woocommerce .button,
+.woocommerce a.button,
+.woocommerce input[type="submit"],
+.woocommerce .shop_table .actions > .button,
+.woocommerce .shop_table .actions .coupon .button,
+.woocommerce .wc-proceed-to-checkout .checkout-button,
+.woocommerce #respond input#submit,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button, .woocommerce a.button.alt,
+.woocommerce button.button,
+.woocommerce button.button.alt,
+.woocommerce input.button,
+.woocommerce input.button.alt,
+.btn-join,
+#btn-join,
+.learndash_checkout_buttons input.btn-join[type="button"], a#quiz_continue_link {
+    background: #43266f !important;
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.btn-join,
+#btn-join {
+    border-radius:0 !important;
+    margin: 1em 0 !important;
+    font-weight:normal;
+}
+
+.button.style1,
+.button.style2
+.button.style3
+.button.style4 {
+    background-color: #43266f;
+    background: #43266f;
+    color: white;
+    padding: 8px;
+    /* font-weight: bold; */
+    border-radius: 0px;
+}
+
+.button.purple {
+    background-color: #43266f;
+    background: #43266f;
+}
+
+/* article and press slider color */
+.post-type-archive-portfolio .da-thumbs article {
+    background: rgba(67,38,111,0.7);
+}
+
+.post-type-archive-portfolio .da-thumbs .hover-excerpt {
+    font-size:14px;
+}
+
+.laurel-btn:hover,
+.woocommerce .button:hover,
+.woocommerce a.button:hover,
+.woocommerce input[type="submit"]:hover,
+.woocommerce .shop_table .actions > .button:hover,
+.woocommerce .shop_table .actions .coupon .button:hover,
+.woocommerce .wc-proceed-to-checkout .checkout-button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button, .woocommerce a.button.alt:hover,
+.woocommerce button.button:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button:hover,
+.woocommerce input.button.alt:hover,
+.btn-join:hover,
+#btn-join:hover,
+.learndash_checkout_buttons input.btn-join[type="button"]:hover, a#quiz_continue_link:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+    color:white;
+}
+#logo img {
+    max-height: 76px;
+}
+
+.header-style2 #logo img {
+    max-height: 150px;
+}
+
+.mailchimp-hide .mailchimp-desc,
+.mailchimp-hide .mailchimp-label {
+    display:none;
+}
+
+.agenda .event {
+    border-bottom:none !important;
+}
+.view-container-border{
+    background:#e5e5e5 !important;
+}
+.agenda .date-label {
+    background: #e5e5e5 !important;
+}
+
+.ccchildpage .cc-child-pages-thumb {
+    height:200px;
+    width:300px;
+    float:left;
+    margin-right:10px;
+}
+
+.ccchildpage .ccpages_excerpt,
+.ccchildpage .ccpages_more {
+    font-size:100%;
+}
+
+#sidebar .StaticEvents .textwidget {
+    border:0px solid white;
+}
+
+#slider .rslides-content.style3 .featured-link a, .thinkupslider-sc .rslides-content.style3 .featured-link a {
+    background: #43266f;
+    border: none;
+}
+
+.laurels-purple span,
+.laurels-purple h1,
+.laurels-purple h2,
+.laurels-purple h3,
+.laurels-purple h4,
+.laurels-purple h5,
+.laurels-purple h6,
+.laurels-purple p,
+.laurels-purple a {
+    color: #43266f !important;
+}
+
+#header .header-links > ul > li a {
+    padding-top: 38px;
+    padding-bottom: 0px;
+
+}
+
+.header-style2 #header .header-links > ul > li > a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 75px;
+    padding-bottom: 0px;
+}
+
+#filter.portfolio-filter li a.selected {
+    color:white;
+}
+
+/* Hide new grid blog layouts - IN DEVELOPMENT */
+.blog-style2 .blog-grid.column-1 .blog-thumb img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: normalize display for portfolio */
+    ; .post-type-archive-portfolio .da-thumbs { overflow:hidden; }
+    .post-type-archive-portfolio .da-thumbs li, .post-type-archive-portfolio .da-thumbs li > a img { width:275px; height:183px;}
+}
+
+p, li, ul {
+    font-size:14px;
+}
+
+/* Event manager styles */
+.tribe-events-event-meta address.tribe-events-address, #tribe-events-content a,
+.tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {
+    font-style: normal;
+}
+
+#tribe-events .tribe-events-button, #tribe-events .tribe-events-button:hover, #tribe_events_filters_wrapper input[type=submit], .tribe-events-button, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-], .tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+    background-color: #43266f;
+}
+
+.tribe-events-list .tribe-events-event-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.tribe-events-page-title a {
+    display: none;
+}
+
+h2.tribe-events-page-title {
+    text-align: left;
+}
+
+.tribe-event-schedule-details,
+.tribe-events-venue-details,
+.tribe-address span {
+    line-height: 1.5em;
+    font-weight: normal;
+}
+
+/* Hide next and previous on event page views */
+ul.tribe-events-sub-nav {
+    display: none;
+}
+
+/* ecs events list shortcode styles for sidebar and content area */
+#sidebar .ecs-event-list,
+#sidebar .ecs-event-list li {
+    border: none;
+    border-bottom: none;
+}
+
+#sidebar .ecs-event-list li {
+    margin-bottom: 10px;
+}
+
+#sidebar .ecs-event-list h4.entry-title {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #43266f;
+}
+
+#sidebar .ecs-event-list li .recurringinfo {
+    display: none;
+}
+
+#sidebar .ecs-event-list h4.entry-title a {
+    padding: 0;
+    font-weight: bold;
+}
+
+#sidebar .ecs-event-list p.ecs-excerpt,
+#sidebar .ecs-event-list span.duration.venue,
+#sidebar .ecs-event-list span.duration.time {
+    font-size: 10px;
+}
+
+#sidebar .ecs-event-list p.ecs-excerpt {
+    margin-bottom: 5px;
+}
+
+#sidebar .ecs-event-list li img {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+
+#sidebar .ecs-event-list span.duration.venue,
+#sidebar .ecs-event-list span.duration.time {
+    display: block;
+}
+
+/* Front page ecs event list */
+.front-page-calendar .ecs-event-list,
+.front-page-calendar .ecs-event-list li {
+    border: none;
+    border-bottom: none;
+}
+
+.front-page-calendar .ecs-event-list li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.front-page-calendar .ecs-event-list h4.entry-title {
+    margin-bottom: 5px;
+    font-size: 12px !important;
+    color: #43266f;
+}
+
+.front-page-calendar .ecs-event-list li .recurringinfo {
+    display: none;
+}
+
+.front-page-calendar .ecs-event-list h4.entry-title a {
+    padding: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.front-page-calendar .ecs-event-list p.ecs-excerpt,
+.front-page-calendar .ecs-event-list span.duration.venue,
+.front-page-calendar .ecs-event-list span.duration.time {
+    font-size: 12px;
+}
+
+.front-page-calendar .ecs-event-list p.ecs-excerpt {
+    margin-bottom: 5px;
+}
+
+.front-page-calendar .ecs-event-list li img {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+
+.front-page-calendar .ecs-event-list span.duration.venue,
+.front-page-calendar .ecs-event-list span.duration.time {
+    display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Helvetica, Arial;
+    font-weight: 100;
+}
+
+.wp-caption .wp-caption-text {
+    text-align: center;
+}
+
+/*
+* Blog entry styles
+*/
+
+/* Default blog entry/list styles */
+.blog-article {
+    border: 0px;
+}
+
+/* Blog category list plugin styles */
+.bok-blog-catlist li {
+    list-style: none;
+    margin: 0 0 1em 0;
+}
+
+.catlist-title {
+    display: block;
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+}
+
+.catlist-thumb {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+
+.catlist-readmore {
+    margin: 10px;
+}
+
+/* Reformat the stupid social media icons below single blog posts */
+.single-post #sharemessage {
+    display: none;
+}
+
+.single-post #shareicons {
+    display: block;
+}
+
+.archive .blog-grid.element.column-1 {
+    position: relative !important;
+    display: inline-block !important;
+    margin: 0 0 10px 0 !important;
+    top: 0px !important;
+}
+
+.archive #main {
+    width: 100%;
+}
+
+.archive #sidebar {
+    display: none;
+}
+
+.archive .blog-article {
+    margin-bottom: 0px;
+}
+
+.archive #intro {
+    display: none;
+}
+
+/* Remove the nav buttons at the bottom of single blog posts. */
+.single-post #nav-below {
+    display: none;
+}
+
+/*
+* Display the sideblocks below main content in mobile view
+* for pages where there is a sideblock.
+*/
+/* Small Tablets & Larger Phones */
+@media only screen and (max-width: 685px) {
+
+    /* Main */
+    #sidebar {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    #sidebar-core {
+        margin-left: 0px;
+    }
+}
+
+/* video header sizing and color */
+.bok-video-feature {
+    font-family: Helvetica, Arial;
+    font-weight: 100;
+    font-size: 18px;
+    color: #43266f !important;
+}
+
+/* resize preview image in events list after events calendar pro upgrade to 4.4.19 */
+.tribe-events-list .tribe-events-loop .tribe-events-event-image {
+    width: auto;
+}
+
+.all-blog-catlist li,
+.bok-blog-catlist li {
+    clear:both;
+    margin: 0 0 1em 0;
+    overflow:auto;
+}
+
+.all-blog-catlist .catlist-title {
+    margin-top: 20px;
+}
+
+.iphone-safari-prompt {
+    display: none;
+}
+
+#slider,
+#slider-core {
+    min-height: 550px;
+}
+
+#header .header-links .sub-menu {
+    box-shadow: 1px 1px 1px #b9b9b9;
+    box-shadow: 1px 1px 1px #b9b9b94d;
+}
+
+/* Hide the share links for course contents */
+.sfwd-lessons-template-default #sharepost,
+.sfwd-topic-template-default #sharepost,
+.sfwd-courses-template-default #sharepost {
+    display: none !important;
+}
+
+/* woocommerce invoice */
+.woocommerce ul.order_details li {
+    border:none;
+}
+
+.woocommerce table.shop_table {
+    border-radius: 0;
+}
+
+table.shop_table {
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+
+.woocommerce-table thead th,
+.woocommerce-table tfood th,
+table.shop_table th,
+.woocommerce-page table.shop_table th {
+    background: none;
+}
+
+.sfwd-breadcrumbs {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+#learndash_course_content {
+    margin:1em;
+}
+
+.woocommerce .quantity .qty {
+    padding: 7px 0 !important;
+}
