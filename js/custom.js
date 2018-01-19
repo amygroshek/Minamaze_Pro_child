@@ -1,6 +1,6 @@
 /* Demo slider */
 jQuery(window).load(function(){
-    console.log('loaded up');
+    // console.log('loaded up');
     jQuery('a[href^="http://www.thinkupthemes.com"]').attr( 'target', '_blank' );
     jQuery('a[href^="http://www.wordpress.org"]').attr( 'target', '_blank' );
 
