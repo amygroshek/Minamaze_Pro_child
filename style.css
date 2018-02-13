@@ -481,3 +481,42 @@ table.shop_table th,
 .woocommerce .quantity .qty {
     padding: 7px 0 !important;
 }
+
+/* Style the embedded mailchimp signup form on the front page */
+#mc_embed_signup form {
+	padding: 0;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.mce_inline_error {
+	padding: 5px;
+}
+
+#mc_embed_signup .mc-field-group {
+	padding-bottom: 10px;
+}
+
+#mc_embed_signup form input {
+	border-radius: 0;
+}
+
+
+#mc_embed_signup input[type=checkbox] {
+	margin-right: 5px;
+}
+
+#mc_embed_signup .button {
+	border-radius: 0 !important;
+	font-size: 12px !important;
+	height: auto;
+	background: #43266f !important;
+}
+
+#mc_embed_signup .button:hover {
+	background: #333 !important;
+}
+
+#mc_embed_signup .mc-field-group label {
+	font-size: 12px;
+}
