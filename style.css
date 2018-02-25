@@ -521,6 +521,7 @@ table.shop_table th,
 	font-size: 12px;
 }
 
+/* movement logic page slider min-height */
 .page-id-14524 #slider,
 .page-id-14524 #slider-core {
   min-height: 0 !important;
