@@ -523,5 +523,5 @@ table.shop_table th,
 
 .page-id-14524 #slider,
 .page-id-14524 #slider-core {
-  min-height: none;
+  min-height: 0 !important;
 }
