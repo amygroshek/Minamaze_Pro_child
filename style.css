@@ -520,3 +520,8 @@ table.shop_table th,
 #mc_embed_signup .mc-field-group label {
 	font-size: 12px;
 }
+
+.page-id-14524 #slider,
+.page-id-14524 #slider-core {
+  min-height: none;
+}
