@@ -86,3 +86,28 @@ function laurelyoga_menu_item() {
 }
 
 add_filter( 'wpmenucart_menu_item_filter', 'laurelyoga_menu_item' );
+
+
+function set_instructor_cookie() {
+  // If the instructor is set...
+  // $instructor = get_query_var('instructor', 'empty');
+  $instructor = isset( $_GET['instructor']) ? $_GET['instructor'] : 'laurel';
+
+  echo 'set instructor cookie'.'<br>';
+  echo 'instructor is '.$instructor;
+
+  if(isset($instructor)) {
+    echo 'it is set';
+    // setcookie( 'instructor', $instructor, 30 * DAY_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+    if ( ! is_admin() && ! isset( $_COOKIE['sitename_new_visitor'] ) ) {
+      setcookie( 'instructor', $instructor, time() + 3600 * 24 * 100, COOKIEPATH, COOKIE_DOMAIN, false );
+    }
+  }
+}
+add_action( 'init', 'set_instructor_cookie' );
+
+function add_query_vars_filter( $vars ){
+  $vars[] = "instructor";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
