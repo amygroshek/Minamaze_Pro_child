@@ -526,3 +526,8 @@ table.shop_table th,
 .page-id-14524 #slider-core {
   min-height: 0 !important;
 }
+
+/* Movement logic custom buttons on woocommerce purchase. */
+.custom-order-features {
+    margin: 1em 0;
+}
