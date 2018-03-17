@@ -1,20 +1,6 @@
 <?php
 
 /**
-* Auto Complete all WooCommerce orders.
-* See https://docs.woocommerce.com/document/automatically-complete-orders/
-*/
-add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
-function custom_woocommerce_auto_complete_order( $order_id ) {
-    if ( ! $order_id ) {
-        return;
-    }
-
-    $order = wc_get_order( $order_id );
-    $order->update_status( 'completed' );
-}
-
-/**
 * Add custom JS
 */
 function mpc_get_scripts() {
@@ -196,4 +182,18 @@ function wc_custom_thankyou_table( $order ) {
 add_action( 'wc_custom_thankyou_successful', 'wc_custom_thankyou_customer_details', 30 );
 function wc_custom_thankyou_customer_details( $order ) {
     wc_get_template( 'custom-thankyou/customer-details.php',           array( 'order' => $order ) );
+}
+
+/**
+* Auto Complete all WooCommerce orders.
+* See https://docs.woocommerce.com/document/automatically-complete-orders/
+*/
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order' );
+function custom_woocommerce_auto_complete_order( $order_id ) {
+    if ( ! $order_id ) {
+        return;
+    }
+
+    $order = wc_get_order( $order_id );
+    $order->update_status( 'completed' );
 }
