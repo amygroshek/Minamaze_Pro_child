@@ -93,11 +93,11 @@ function set_instructor_cookie() {
     // $instructor = get_query_var('instructor', 'empty');
     $instructor = isset( $_GET['instructor']) ? $_GET['instructor'] : 0;
 
-    echo 'set instructor cookie'.'<br>';
-    echo 'instructor is '.$instructor;
+    // echo 'set instructor cookie'.'<br>';
+    // echo 'instructor is '.$instructor;
 
     if($instructor) {
-        echo 'it is set';
+        // echo 'it is set';
         // setcookie( 'instructor', $instructor, 30 * DAY_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
         if ( ! is_admin() && ! isset( $_COOKIE['sitename_new_visitor'] ) ) {
             setcookie( 'instructor', $instructor, time() + 3600 * 24 * 100, COOKIEPATH, COOKIE_DOMAIN, false );
