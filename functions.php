@@ -156,6 +156,7 @@ function wc_custom_thankyou( $content ) {
             * @hooked wc_custom_thankyou_table - 20
             * @hooked wc_custom_thankyou_customer_details - 30
             */
+            custom_woocommerce_auto_complete_order($order->get_id());
             do_action( 'wc_custom_thankyou_successful', $order );
         }
     }
