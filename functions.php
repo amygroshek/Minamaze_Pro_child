@@ -89,12 +89,30 @@ function set_instructor_cookie() {
 }
 add_action( 'init', 'set_instructor_cookie' );
 
-// Remove cookie on logout
-add_action('wp_logout', 'remove_instructor_cookie');
+/**
+ * remove_instructor_cookie Removes cookie on logout
+ * @return none
+ */
 function remove_instructor_cookie() {
+  // error_log('remove_instructor_cookie()');
   unset($_COOKIE['instructor']);
   setcookie('instructor', '', time() - ( 15 * 60 ));
 }
+add_action('wp_logout', 'remove_instructor_cookie');
+
+/**
+ * run_init_cookie_check Force the logout remove cookie
+ * @return none
+ */
+function run_init_cookie_check() {
+    // error_log('run_init_cookie_check()');
+    if (isset($_GET['action'])) {
+        if ($_GET['action'] == 'logout') {
+            remove_instructor_cookie();
+        }
+    }
+}
+add_action('init', 'run_init_cookie_check');
 
 function add_query_vars_filter( $vars ){
     $vars[] = "instructor";
