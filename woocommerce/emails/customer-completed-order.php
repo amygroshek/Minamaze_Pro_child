@@ -29,7 +29,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <p><?php
 
-$accesscoursesprompt = 'If you purchased an online course, log in to <a href="https://laurelyoga.com/learner-profile/">My Courses</a> to begin your learning.';
+$accesscoursesprompt = 'If you purchased an online course, log in to <a href="'.site_url('/learner-profile/', 'https').'">My Courses</a> to begin your learning.';
 printf( __( "Hi there. Your recent order on %s has been completed. Your order details are shown below for your reference.".' '.$accesscoursesprompt, 'woocommerce' ), get_option( 'blogname' ) );
 
 ?></p>
