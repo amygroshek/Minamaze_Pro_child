@@ -531,3 +531,8 @@ table.shop_table th,
 .custom-order-features {
     margin: 1em 0;
 }
+
+/* New logo, increase padding */
+div#logo a img {
+    margin: .5em 0;
+}
