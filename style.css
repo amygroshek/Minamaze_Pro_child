@@ -545,3 +545,31 @@ div#logo a img {
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
     right: 62px !important;
 }
+
+.woocommerce-checkout form.login .form-row, #billing_first_name_field, #billing_last_name_field, #billing_state_field, #billing_postcode_field, #billing_email_field, #billing_phone_field, #shipping_first_name_field, #shipping_last_name_field, #shipping_state_field, #shipping_postcode_field, #shipping_email_field, #shipping_phone_field {
+    width: 47% !important;
+}
+
+#billing_phone_field {
+    margin-right: 2%;
+}
+
+.mc4wp-checkbox.mc4wp-checkbox-woocommerce input {
+    margin-right: 6px;
+}
+
+.woocommerce-checkout-payment .woocommerce-terms-and-conditions-wrapper .form-row.validate-required {
+    padding: 0 !important;
+}
+
+.woocommerce-privacy-policy-text p {
+    margin-bottom: 2px;
+}
+
+.woocommerce-terms-and-conditions {
+    padding: 20px;
+}
+
+.woocommerce form .form-row .woocommerce-terms-and-conditions-wrapper .input-checkbox {
+    margin-right: 2px;
+}
