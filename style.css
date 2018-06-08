@@ -536,3 +536,12 @@ table.shop_table th,
 div#logo a img {
     margin: .5em 0;
 }
+
+/* ecommerce like button height */
+.woocommerce-product-gallery__wrapper .woo-meta a {
+    font-size: 14px;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    right: 62px !important;
+}
