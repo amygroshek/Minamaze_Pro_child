@@ -573,3 +573,112 @@ div#logo a img {
 .woocommerce form .form-row .woocommerce-terms-and-conditions-wrapper .input-checkbox {
     margin-right: 2px;
 }
+
+/* Adjust post margins and image sizing */
+/* desktop*/
+@media only screen and (min-width: 768px){
+
+    article,
+    .post-template-default.single-post h1.page-title,
+    .page h1.page-title
+    #comments,
+    #sharepost {
+        width: 65%;
+        margin: 1em auto;
+    }
+
+    /* Paragraph width */
+    .post-template-default.single-post header.entry-meta,
+    .post-template-default.single-post article.post p,
+    .post-template-default.single-post article.post ul,
+    .post-template-default.single-post article.post ol,
+    .post-template-default.single-post article.post .p1,
+    .post-template-default.single-post article.post .h2,
+    .post-template-default.single-post article.post .h3,
+    .post-template-default.single-post article.post .h4,
+    .post-template-default.single-post article.post .h5,
+    .post-template-default.single-post article.post .h6,
+    .post-template-default.single-post .post .entry-content div,
+    .post-template-default.single-post .post .entry-content h2,
+    .post-template-default.single-post .post .entry-content h3,
+    .post-template-default.single-post .post .entry-content h4,
+    .post-template-default.single-post .post .entry-content h5,
+    .post-template-default.single-post .post .entry-content h6 {
+        width: 80% !important;
+        margin: 1em auto !important;
+    }
+    /* image and iframe */
+    .post-template-default.single-post article.post img {
+        width: 120%;
+        max-width: 120%;
+        margin: 1em 10% 1em -10%;
+    }
+
+    #sharepost {
+        text-align: center !important;
+    }
+
+    #shareicons {
+        width: auto;
+        display: inline-block !important;
+        text-align: left !important;
+        padding-left: 0;
+        padding: 1em 0;
+    }
+
+    #shareicons > a > i {
+        font-size: 36px;
+    }
+/* } */
+/* tablet */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+/* Styles */
+
+}
+/* mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+/* Styles */
+
+}
+
+body,
+div,
+span,
+p {
+    color: #6b6b6b;
+}
+
+article ul,
+article ol {
+    list-style-position: inside;
+    padding-left: 1em;
+}
+
+#intro.option1 #intro-core:before {
+    content: '';
+    position: relative;
+    border-bottom: none;
+}
+
+#intro.option1 #intro-core:after {
+    content: '';
+    position: relative;
+    border-bottom: none;
+    display: none;
+}
+
+#intro.option1 {
+    margin-bottom: 1rem;
+}
+
+#intro.option1 #intro-core {
+    padding-bottom: 0;
+}
+
+#intro.option1 .page-title {
+    display: block;
+    line-height: 1.45;
+    margin: .5em auto 0 !important;
+}
