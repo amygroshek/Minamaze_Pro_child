@@ -171,10 +171,6 @@ Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, 
     .post-type-archive-portfolio .da-thumbs li, .post-type-archive-portfolio .da-thumbs li > a img { width:275px; height:183px;}
 }
 
-p, li, ul {
-    font-size:14px;
-}
-
 /* Event manager styles */
 .tribe-events-event-meta address.tribe-events-address, #tribe-events-content a,
 .tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {
@@ -334,8 +330,8 @@ textarea {
 
 .catlist-title {
     display: block;
-    font-size: 16px;
-    /* font-weight: bold; */
+    font-size: 18px;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -578,17 +574,16 @@ div#logo a img {
 /* desktop*/
 @media only screen and (min-width: 768px){
 
-    article,
+    .post-template-default.single-post article,
     .post-template-default.single-post h1.page-title,
-    .page h1.page-title
-    #comments,
-    #sharepost {
+    .post-template-default.single-post #comments,
+    .post-template-default.single-post #sharepost {
         width: 65%;
         margin: 1em auto;
     }
 
     /* Paragraph width */
-    .post-template-default.single-post header.entry-meta,
+    /* .post-template-default.single-post header.entry-meta,
     .post-template-default.single-post article.post p,
     .post-template-default.single-post article.post ul,
     .post-template-default.single-post article.post ol,
@@ -598,21 +593,21 @@ div#logo a img {
     .post-template-default.single-post article.post .h4,
     .post-template-default.single-post article.post .h5,
     .post-template-default.single-post article.post .h6,
-    .post-template-default.single-post .post .entry-content div,
-    .post-template-default.single-post .post .entry-content h2,
-    .post-template-default.single-post .post .entry-content h3,
-    .post-template-default.single-post .post .entry-content h4,
-    .post-template-default.single-post .post .entry-content h5,
-    .post-template-default.single-post .post .entry-content h6 {
+    .post-template-default.single-post article.post .entry-content div,
+    .post-template-default.single-post article.post .entry-content h2,
+    .post-template-default.single-post article.post .entry-content h3,
+    .post-template-default.single-post article.post .entry-content h4,
+    .post-template-default.single-post article.post .entry-content h5,
+    .post-template-default.single-post article.post .entry-content h6 {
         width: 80% !important;
         margin: 1em auto !important;
-    }
+    }*/
     /* image and iframe */
-    .post-template-default.single-post article.post img {
+    /*.post-template-default.single-post article.post img {
         width: 120%;
         max-width: 120%;
         margin: 1em 10% 1em -10%;
-    }
+    }*/
 
     #sharepost {
         text-align: center !important;
@@ -629,25 +624,69 @@ div#logo a img {
     #shareicons > a > i {
         font-size: 36px;
     }
-/* } */
+}
 /* tablet */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-
-/* Styles */
-
+@media only screen and (min-width : 480px) and (max-width : 767px) {
+    #content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 /* mobile */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-/* Styles */
-
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+    #content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 body,
 div,
-span,
-p {
+article span,
+article p,
+article ul,
+article li {
     color: #6b6b6b;
+    font-size: 16px;
+}
+
+#header .header-links li,
+#header .header-links .sub-menu li {
+    font-size: 14px;
+}
+
+#header .header-links .sub-menu li a,
+#header .header-links .sub-menu li a span {
+    font-size: 13px;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+h1.page-title,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #43266f;
+    font-weight: 500;
+}
+
+.blog-article h2.blog-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #43266f;
+}
+
+.blog-article .more-link {
+    padding: 10px 15px;
+}
+
+.entry-header.entry-meta .author,
+.category .entry-meta .author {
+    display: none;
 }
 
 article ul,
