@@ -650,6 +650,16 @@ article li {
     font-size: 16px;
 }
 
+button,
+.button,
+.button.style1,
+.button.style2,
+.woocommerce .button {
+    font-size: 14px;
+    /* line-height: 1; */
+    padding: 1rem 2.5rem;
+}
+
 #header .header-links li,
 #header .header-links .sub-menu li {
     font-size: 14px;
