@@ -33,4 +33,14 @@ jQuery(window).load(function(){
         jQuery('body').addClass('ios-iphone-safari');
     }
 
+    if (jQuery('h1.tribe-events-page-title').length >= 1) {
+        // console.log('Tribe events heading exists.');
+        jQuery('h1.tribe-events-page-title a').remove();
+        $inner = jQuery('h1.tribe-events-page-title').text();
+        // console.log($inner);
+        $inner = $inner.replace(/› /g,'');
+        // console.log($inner);
+        jQuery('h1.tribe-events-page-title').text($inner).css('display', 'inline-block');
+    }
+
 });

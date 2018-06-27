@@ -731,3 +731,21 @@ article ol {
     line-height: 1.45;
     margin: .5em auto 0 !important;
 }
+
+h1.tribe-events-page-title {
+    display: none;
+    text-align: left;
+}
+
+#tribe-events-bar {
+    margin-bottom: 0;
+}
+
+.tribe-events-title-bar {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#tribe-events-content-wrapper {
+    margin-top: 3rem;
+}
