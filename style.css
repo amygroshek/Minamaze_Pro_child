@@ -749,3 +749,14 @@ h1.tribe-events-page-title {
 #tribe-events-content-wrapper {
     margin-top: 3rem;
 }
+.mc-field-group.input-group ul {
+    margin: .5em 0 .25em 0;
+}
+
+.mc-field-group.input-group ul li {
+    list-style-type: none;
+}
+
+#mc_embed_signup_scroll .indicates-required {
+    display: none;
+}
