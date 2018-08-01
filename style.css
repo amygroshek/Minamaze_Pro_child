@@ -701,7 +701,7 @@ article h6 {
 
 article ul,
 article ol {
-    list-style-position: inside;
+    list-style-position: outside;
     padding-left: 1em;
 }
 
