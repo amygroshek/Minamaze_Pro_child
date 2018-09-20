@@ -780,3 +780,24 @@ h1.tribe-events-page-title {
 .woocommerce form .form-row label {
     display: inline-block;
 }
+
+/* Woocommerce shortcode product list styling */
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.woocommerce ul.products li {
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .woocommerce ul.products li {
+        width: 23%;
+    }
+}
+
+.woocommerce ul.products li a span.more-text,
+.woocommerce ul.products li a span.more-icon {
+    color: #fff;
+}
