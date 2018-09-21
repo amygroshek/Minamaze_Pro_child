@@ -768,7 +768,7 @@ h1.tribe-events-page-title {
 }
 
 .woocommerce ul.products li {
-    height: 500px;
+    min-height: 500px !important;
 }
 
 .tax-product_tag .products .added_to_cart:hover,

@@ -242,3 +242,21 @@ function lb_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'lb_theme_enqueue_styles' );
+
+/**
+ * Show the product title in the product loop. By default this is an H2.
+ */
+function lb_woocommerce_template_loop_product_title() {
+    echo '<a href="' . get_the_permalink() . '">'.
+            '<h2 class="woocommerce-loop-product__title">' . get_the_title() . '</h2>'.
+        '</a>';
+}
+add_action('lb_woocommerce_shop_loop_item_title', 'lb_woocommerce_template_loop_product_title');
+
+remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+function lb_woocommerce_template_loop_product_thumbnail() {
+    echo '<a href="' . get_the_permalink() . '" title="Access ' . get_the_title() . ' details">'.
+            woocommerce_get_product_thumbnail()
+        .'</a>';
+}
+add_action( 'lb_woocommerce_before_shop_loop_item_title', 'lb_woocommerce_template_loop_product_thumbnail', 11 );
