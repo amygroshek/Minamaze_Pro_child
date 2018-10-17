@@ -431,7 +431,8 @@ textarea {
 
 #slider,
 #slider-core {
-    min-height: 550px;
+    /* min-height: 550px; */
+    min-height: auto;
 }
 
 #header .header-links .sub-menu {
