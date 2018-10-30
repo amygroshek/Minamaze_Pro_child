@@ -802,3 +802,19 @@ h1.tribe-events-page-title {
 .woocommerce ul.products li a span.more-icon {
     color: #fff;
 }
+
+/* Improve mobile formatting for events list */
+#tribe-events-content.tribe-events-list,
+#tribe-events-content.tribe-events-month {
+    display: inline;
+}
+@media (max-width:500px){
+    /* Hide calendar view when mobile */
+    #tribe-events-content.tribe-events-month .tribe-events-calendar {
+        display:none;
+    }
+    /* Display mobile content when mobile */
+     #tribe-events-content #tribe-mobile-container {
+         display: inline;
+     }
+}
