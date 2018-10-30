@@ -803,18 +803,11 @@ h1.tribe-events-page-title {
     color: #fff;
 }
 
-/* Improve mobile formatting for events list */
-#tribe-events-content.tribe-events-list,
-#tribe-events-content.tribe-events-month {
-    display: inline;
+/* Small improvements to events lists */
+.tribe-events-loop .tribe-events-event-meta {
+    border: none;
+    background: none;
 }
-@media (max-width:500px){
-    /* Hide calendar view when mobile */
-    #tribe-events-content.tribe-events-month .tribe-events-calendar {
-        display:none;
-    }
-    /* Display mobile content when mobile */
-     #tribe-events-content #tribe-mobile-container {
-         display: inline;
-     }
+.tribe-events-list .tribe-events-venue-details {
+    border-top: none;
 }
