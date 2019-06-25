@@ -260,3 +260,13 @@ function lb_woocommerce_template_loop_product_thumbnail() {
         .'</a>';
 }
 add_action( 'lb_woocommerce_before_shop_loop_item_title', 'lb_woocommerce_template_loop_product_thumbnail', 11 );
+
+/**
+ * If template = tiles, limit excerpt length
+ * @param  [type] $length [description]
+ * @return [type]         [description]
+ */
+function custom_excerpt_length() {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
