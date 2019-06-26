@@ -25,7 +25,7 @@ get_header(); ?>
     $query = new WP_Query( $args );
     $opts = array(
         'grids' => 'Sales Pages Grid',
-        'small_screen_grid' => 'Mobile',
+        'small_screen_grid' => 'Sales Pages Grid Mobile',
         'breakpoint' => 800,
         'byline_template' => '<p>%excerpt%</p><a class="btn btn-primary laurel-btn" href="%link%">Purchase</a>',
         'byline_template_textonly' => '<a class="btn btn-primary laurel-btn" href="%link%">Purchase</a>',

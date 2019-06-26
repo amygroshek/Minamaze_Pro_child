@@ -858,3 +858,12 @@ h1.tribe-events-page-title {
   min-width: 200px;
   margin: 2rem auto;
 }
+
+@media screen and (max-width: 640px) {
+  .wp-tiles-tile .wp-tiles-tile-wrapper .wp-tiles-byline p {
+    display: none;
+  }
+  .wp-tiles-tile .wp-tiles-tile-wrapper .wp-tiles-byline h4 {
+    font-size: 1.8rem;
+  }
+}
