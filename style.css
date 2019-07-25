@@ -867,3 +867,76 @@ h1.tribe-events-page-title {
     font-size: 1.8rem;
   }
 }
+
+.flexbox-list-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  width: 100%;
+}
+
+.flexbox-list-parent .flexbox-item {
+  color: red;
+  width: 361px;
+  height: 534px;
+  list-style-type: none !important;
+  border: 1px solid #43266f;
+  margin: 3px;
+  min-width: 361px;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.flexbox-list-parent .flexbox-item a img {
+  width: 361px;
+  height: 534px;
+}
+
+.flexbox-list-parent .flexbox-item .show {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.flexbox-list-parent .flexbox-item .onhover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 361px;
+  height: 534px;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-list-parent .flexbox-item .onhover .center {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.flexbox-list-parent .flexbox-item .onhover .lcp_excerpt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #43266f;
+  margin-bottom: 2rem;
+}
+
+.flexbox-list-parent .flexbox-item .onhover a.btn {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 20px;
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+
+.flexbox-list-parent .flexbox-item:hover .show {
+  opacity: 0;
+}
+
+.flexbox-list-parent .flexbox-item:hover .onhover {
+  opacity: 1;
+}

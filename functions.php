@@ -270,3 +270,19 @@ function custom_excerpt_length() {
 	return 20;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+add_filter( 'get_posts_morelink', 'MyCustomfilter', $priority = 999, $args = 1);
+
+function MyCustomfilter($post) {
+    if(!empty($this->params['posts_morelink'])){
+      $href = 'href="' . get_permalink($single->ID) . '"';
+      $class = "";
+      if ( !empty($this->params['posts_morelink_class']) ):
+        $class = 'class="' . $this->params['posts_morelink_class'] . 'btn laurel-purple" ';
+      endif;
+      $readmore = $this->params['posts_morelink'];
+      return ' <a ' . $href . ' ' . $class . ' >' . $readmore . '</a>';
+    }
+}
+
+// add_post_type_support( 'page', 'excerpt' );
