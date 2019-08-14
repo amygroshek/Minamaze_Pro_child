@@ -286,3 +286,8 @@ function MyCustomfilter($post) {
 }
 
 // add_post_type_support( 'page', 'excerpt' );
+
+function lb_add_google_fonts() {
+    wp_enqueue_style( 'google-font-pacifico', 'https://fonts.googleapis.com/css?family=Pacifico&display=swap', false );
+}
+add_action( 'wp_enqueue_scripts', 'lb_add_google_fonts' );
