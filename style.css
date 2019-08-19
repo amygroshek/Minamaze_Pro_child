@@ -880,7 +880,7 @@ h1.tribe-events-page-title {
 .flexbox-list-parent .flexbox-item {
   color: red;
   width: 361px;
-  height: 534px;
+  height: 361px; /* 534px; */
   list-style-type: none !important;
   border: 1px solid #43266f;
   margin: 3px;
@@ -891,7 +891,7 @@ h1.tribe-events-page-title {
 
 .flexbox-list-parent .flexbox-item a img {
   width: 361px;
-  height: 534px;
+  height: 361px; /* 534px; */
 }
 
 .flexbox-list-parent .flexbox-item .show {
@@ -904,7 +904,7 @@ h1.tribe-events-page-title {
   top: 0;
   left: 0;
   width: 361px;
-  height: 534px;
+  height: 361px; /* 534px; */
   opacity: 0;
   transition: opacity 200ms ease-in;
   display: flex;
