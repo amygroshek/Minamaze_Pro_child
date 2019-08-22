@@ -875,6 +875,8 @@ h1.tribe-events-page-title {
   align-items: flex-start;
   list-style-type: none;
   width: 100%;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 .flexbox-list-parent .flexbox-item {
