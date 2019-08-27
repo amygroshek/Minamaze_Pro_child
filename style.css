@@ -311,8 +311,23 @@ textarea {
     font-weight: 100;
 }
 
-.wp-caption .wp-caption-text {
+
+article.type-post .wp-caption {
+  width: 100% !important;
+}
+
+article.type-post .wp-caption img,
+article.type-post p img {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article.type-post .wp-caption .wp-caption-text {
     text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
